@@ -57,6 +57,82 @@ export const asyncRoutes: AppRouteRecord[] = [
     ]
   },
   {
+    name: 'GasDetection',
+    path: '/gas',
+    component: RoutesAlias.Layout,
+    meta: {
+      title: '气体检测',
+      icon: '&#xe7b9;',
+      roles: ['R_SUPER', 'R_ADMIN']
+    },
+    children: [
+      {
+        path: 'dashboard',
+        name: 'GasDashboard',
+        component: RoutesAlias.GasDashboard,
+        meta: {
+          title: 'Dashboard',
+          keepAlive: false,
+          fixedTab: true
+        }
+      },
+      {
+        path: 'realtime',
+        name: 'GasRealtime',
+        component: RoutesAlias.GasRealtime,
+        meta: {
+          title: 'Realtime',
+          keepAlive: false
+        }
+      },
+      {
+        path: 'sensors',
+        name: 'GasSensors',
+        component: RoutesAlias.GasSensors,
+        meta: {
+          title: 'Sensors',
+          keepAlive: true
+        }
+      },
+      {
+        path: 'ai-model',
+        name: 'GasAIModel',
+        component: RoutesAlias.GasAIModel,
+        meta: {
+          title: 'AI Model',
+          keepAlive: false
+        }
+      },
+      {
+        path: 'library',
+        name: 'GasLibrary',
+        component: RoutesAlias.GasLibrary,
+        meta: {
+          title: 'Gas Library',
+          keepAlive: true
+        }
+      },
+      {
+        path: 'history',
+        name: 'GasHistory',
+        component: RoutesAlias.GasHistory,
+        meta: {
+          title: 'History',
+          keepAlive: true
+        }
+      },
+      {
+        path: 'settings',
+        name: 'GasSettings',
+        component: RoutesAlias.GasSettings,
+        meta: {
+          title: 'Settings',
+          keepAlive: false
+        }
+      }
+    ]
+  },
+  {
     path: '/template',
     name: 'Template',
     component: RoutesAlias.Layout,

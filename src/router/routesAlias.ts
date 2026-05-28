@@ -53,5 +53,13 @@ export enum RoutesAlias {
   ExamplesTabs = '/examples/tabs', // 标签页
   ExamplesTablesBasic = '/examples/tables/basic', // 基础表格示例
   ExamplesTables = '/examples/tables', // 高级表格示例
-  ExamplesTablesTree = '/examples/tables/tree' // 左右布局表格示例
+  ExamplesTablesTree = '/examples/tables/tree', // 左右布局表格示例
+  // 气体检测
+  GasDashboard = '/gas/dashboard', // 气体检测 - 总览
+  GasRealtime = '/gas/realtime', // 气体检测 - 实时监测
+  GasSensors = '/gas/sensors', // 气体检测 - 传感器
+  GasAIModel = '/gas/ai-model', // 气体检测 - AI分析
+  GasLibrary = '/gas/library', // 气体检测 - 气体说明
+  GasHistory = '/gas/history', // 气体检测 - 历史数据
+  GasSettings = '/gas/settings' // 气体检测 - 系统设置
 }
